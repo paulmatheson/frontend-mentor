@@ -19,7 +19,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Live Site URL: [Click here](https://codepen.io/illpill/full/oNPOzNE)
+- Live Site URL: [Click here](https://incandescent-dango-621f7d.netlify.app/)
 
 ## My process
 
