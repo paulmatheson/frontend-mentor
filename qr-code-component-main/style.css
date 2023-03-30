@@ -32,11 +32,12 @@ body {
 h1 {
     font-size: 1.4em;
     line-height: 30px;
+    color: hsl(218, 44%, 22%);
 }
 
 .container p {
     font-weight: 400;
-    color: hsl(212, 45%, 89%);
+    color: hsl(220, 15%, 55%);
     line-height: 20px;
 }
 
