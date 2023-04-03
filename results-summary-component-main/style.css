@@ -3,12 +3,15 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Hanken Grotesk", Arial, Helvetica, sans-serif
+    font-family: "Hanken Grotesk", Arial, Helvetica, sans-serif;
+    color: hsla(224, 30%, 27%);
+    font-size: 18px;
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding-bottom: 2em;
 }
 
 .attribution a {
@@ -17,6 +20,7 @@ body {
 
 .container {
     width: 100%;
+    margin-bottom: 2em;
 }
 
 .results {
@@ -24,9 +28,11 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 1px solid black;
     border-radius: 0 0 25px 25px;
     padding: 1em 3em 2.4em 3em;
+    background-color: hsl(241, 81%, 54%);
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
 }
 
 .results h1 {
@@ -34,7 +40,7 @@ body {
 }
 
 .score {
-    border: 1px solid black;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -42,8 +48,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.8em;
-    margin: 1em 0 0 0;
+    padding: 2em;
+    margin: 0.5em 0 0 0;
 }
 
 .score h2 {
@@ -54,6 +60,8 @@ body {
 
 .score p {
     margin: 0;
+    font-size: 0.9em;
+    color: hsla(0, 0%, 100%, 45%);
 }
 
 .synopsis h2 {
@@ -62,6 +70,8 @@ body {
 
 .synopsis p {
     margin: 0 0 0 0;
+    color: hsla(0, 0%, 100%, 60%);
+    font-size: 0.9em;
 }
 
 .summary {
@@ -71,20 +81,92 @@ body {
 .category {
     display: grid;
     grid-template-columns: 30px 1fr 1fr;
-    border: 1px solid black;
     border-radius: 10px;
-    padding: 1em;
+    padding: 0.9em;
     margin: 1em 0;
 }
 
 .category span:last-child {
-    color: red;
     justify-self: end;
+    color: hsla(224, 30%, 27%, 50%);
 }
 
 button {
     width: 100%;
     border: none;
     border-radius: 25px;
-    padding: 1em;
+    padding: 1.2em;
+    margin: 0.5em 0;
+    color: white;
+    font-weight: 500;
+    background-color: hsl(224, 30%, 27%);
+    cursor: pointer;
+}
+
+button:active {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background-color: hsl(241, 81%, 54%);
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 10%);
+}
+
+.reaction span:first-of-type {
+    color: hsla(0, 100%, 67%, 80%)
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 10%);
+}
+
+.memory span:first-of-type {
+    color: hsla(39, 100%, 56%, 80%)
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 10%);
+}
+
+.verbal span:first-of-type {
+    color: hsla(166, 100%, 37%, 80%)
+}
+
+.vision {
+    background-color: hsla(234, 85%, 45%, 10%);
+}
+
+.vision span:first-of-type {
+    color: hsla(234, 85%, 45%, 80%)
+}
+
+strong {
+    font-weight: 600;
+    color: hsl(224, 30%, 27%)
+}
+
+@media screen and (min-width: 429px) {
+    body {
+        padding: 2em;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 100, 0.05) 0px 15px 25px 10px, rgba(0, 0, 100, 0.02) 0px 10px 10px -5px;
+    }
+
+    .results {
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    button {
+        margin-bottom: 3em;
+    }
 }
