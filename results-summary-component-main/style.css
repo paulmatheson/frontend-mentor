@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: "Hanken Grotesk", Arial, Helvetica, sans-serif;
     color: hsla(224, 30%, 27%);
     font-size: 18px;
@@ -18,7 +16,7 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-.container {
+.app {
     width: 100%;
     margin-bottom: 2em;
 }
@@ -155,6 +153,13 @@ strong {
     }
 
     .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .app {
         max-width: 700px;
         margin: 0 auto;
         margin-bottom: 2em;
