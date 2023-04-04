@@ -78,6 +78,10 @@ body {
     padding: 0 2em;
 }
 
+.summary h3 {
+    margin-top: 1.5em;
+}
+
 .category {
     display: grid;
     grid-template-columns: 30px 1fr 1fr;
