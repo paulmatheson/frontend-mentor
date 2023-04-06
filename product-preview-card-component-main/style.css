@@ -31,6 +31,7 @@ body {
     background-image: url(images/image-product-desktop.jpg);
     background-size: cover;
     border-radius: 10px 0 0 10px;
+
 }
 
 .information {
@@ -89,4 +90,34 @@ button:hover {
 
 button img {
     padding: 0 1em 0 0;
+}
+
+.attribution {
+    text-align: center;
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        margin: 2.2em 1.2em;
+    }
+
+    .container {
+        height: initial;
+    }
+
+    .app {
+        grid-template-columns: 1fr;
+        grid-template-rows: 239px 1fr;
+        width: 100%;
+        max-width: 342px;
+        margin-bottom: 2em;
+    }
+
+    .preview {
+        border-radius: 10px 10px 0 0;
+        background-image: url(images/image-product-mobile.jpg);
+        background-size: contain;
+        background-position: center;
+    }
+
 }
