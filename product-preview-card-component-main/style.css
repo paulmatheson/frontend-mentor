@@ -118,6 +118,27 @@ button img {
         background-image: url(images/image-product-mobile.jpg);
         background-size: contain;
         background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+
+    .information {
+        padding-top: 1.4em;
+    }
+
+    .information h1 {
+        font-size: 28px;
+        margin-top: 0.4em;
+        margin-bottom: 0.2em;
+    }
+
+    .information p {
+        margin-bottom: 0.4em;
+    }
+
+    .price {
+        padding-bottom: 0;
+        margin-bottom: 1em;
     }
 
 }
