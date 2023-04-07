@@ -1,10 +1,11 @@
-# frontend-mentor
+# Frontend Mentor
 
 ## Welcome! 👋
 
 This repository serves as a catch-all to my solutions to various Frontend Mentor challenges as I solve and publish them. Feel free to browse and gather inspiration.
 
-[About Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+### About Frontend Mentor
+[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
 Want support as you go through the challenges yourself? [Join the Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
