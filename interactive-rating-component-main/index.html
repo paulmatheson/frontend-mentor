@@ -7,25 +7,16 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <div class="container">
-    <span class="rating"></span>
+    <span class="star">
+      <img src="images/icon-star.svg" />
+    </span>
 
     <h1>
       How did we do?
@@ -35,11 +26,21 @@
       Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!
     </p>
-    <form>
-      <input class="rating" max="5" oninput="this.style.setProperty('--value', this.value)" step="1" type="range"
-        value="1">
-    </form>
-    <input type="button" value="submit">
+    <fieldset class="star-rating">
+      <div>
+        <input type="radio" name="rating" value="1" id="rating1" />
+        <label for="rating1"><span>1</span></label>
+        <input type="radio" name="rating" value="2" id="rating2" />
+        <label for="rating2"><span>2</span></label>
+        <input type="radio" name="rating" value="3" id="rating3" />
+        <label for="rating3"><span>3</span></label>
+        <input type="radio" name="rating" value="4" id="rating4" />
+        <label for="rating4"><span>4</span></label>
+        <input type="radio" name="rating" value="5" id="rating5" />
+        <label for="rating5"><span>5</span></label>
+      </div>
+    </fieldset>
+    <input type="button" value="SUBMIT">
 
     <!-- Rating state end -->
 
@@ -60,8 +61,10 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.paulmatheson.net">Paul Matheson</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

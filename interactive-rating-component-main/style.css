@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+    font-family: "Overpass", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    transition: all 0.4s ease-out;
+}
+
+p {
+    color: hsl(216, 12%, 54%);
+}
+
+.container {
+    max-width: 370px;
+    border-radius: 15px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: hsl(213, 19%, 28%);
+}
+
+.star-rating {
+    padding: 0;
+    margin: 2em 0;
+}
+
+.star-rating div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    background: hsl(213, 19%, 28%);
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: hsl(216, 12%, 54%) transition: all 0.4s ease-out;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.selected {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+input[type=button] {
+    width: 100%;
+    padding: 1em 0;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    transition: all 0.4s ease-out;
+}
+
+input[type=button]:hover {
+    color: hsl(25, 97%, 53%)
+}
+
+.ty-modal {
+    display: none;
+}
+
+.attribution {
+    text-align: center;
+}
+
+.attribution a {
+    color: white;
+}
