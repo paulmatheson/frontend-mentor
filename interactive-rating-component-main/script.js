@@ -1,5 +1,8 @@
 const labels = document.querySelectorAll('label')
 const inputs = document.querySelectorAll('input[type="radio"]')
+const submitBtn = document.getElementById('submit-button')
+const ratingModule = document.querySelector('.rating-module')
+const tyModule = document.querySelector('.ty-module')
 
 inputs.forEach(input => {
     input.addEventListener("click", function () {
@@ -8,4 +11,9 @@ inputs.forEach(input => {
         })
         this.nextElementSibling.classList.add("selected") // add .selected class to chosen rating
     })
+})
+
+submitBtn.addEventListener("click", () => {
+    ratingModule.style.display = "none"
+    tyModule.style.display = "initial"
 })
