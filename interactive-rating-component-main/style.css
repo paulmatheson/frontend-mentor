@@ -83,7 +83,7 @@ input[type=radio] {
     color: white;
 }
 
-input[type=button] {
+input[type=submit] {
     width: 100%;
     padding: 1.2em 0;
     letter-spacing: 1px;
@@ -96,7 +96,7 @@ input[type=button] {
     transition: all 0.1s ease-out;
 }
 
-input[type=button]:hover {
+input[type=submit]:hover {
     color: hsl(25, 97%, 53%);
     background-color: white;
 }

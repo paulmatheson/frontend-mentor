@@ -1,6 +1,6 @@
 const labels = document.querySelectorAll('label')
 const inputs = document.querySelectorAll('input[type="radio"]')
-const submitBtn = document.getElementById('submit-button')
+const form = document.querySelector('.rating-form')
 const ratingModule = document.querySelector('.rating-module')
 const tyModule = document.querySelector('.ty-module')
 
@@ -13,7 +13,8 @@ inputs.forEach(input => {
     })
 })
 
-submitBtn.addEventListener("click", () => {
+form.addEventListener("submit", () => {
     ratingModule.style.display = "none"
     tyModule.style.display = "initial"
+
 })
