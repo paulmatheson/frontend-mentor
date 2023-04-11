@@ -101,8 +101,26 @@ input[type=submit]:hover {
     background-color: white;
 }
 
-.ty-module {
+.rating-module {
     display: none;
+}
+
+.ty-module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ty-module img {
+    max-width: 140px;
+}
+
+.ty-module p:first-of-type {
+    background-color: hsl(216, 12%, 24%);
+    padding: 0.6em 1em;
+    color: hsl(25, 97%, 53%);
+    border-radius: 20px;
 }
 
 .attribution {
