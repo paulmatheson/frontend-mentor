@@ -16,17 +16,23 @@ body {
 p {
     color: hsl(216, 12%, 54%);
     font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 0;
 }
 
 h1 {
     font-weight: 400;
 }
 
+h2 {
+    margin: 0;
+}
+
 .container {
     max-width: 350px;
     border-radius: 15px;
     background-color: hsl(213, 19%, 18%);
-    padding: 2em;
+    padding: 2.5em 2em;
     margin-bottom: 2em;
 }
 
@@ -109,6 +115,7 @@ input[type=submit]:hover {
     display: none;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -122,6 +129,7 @@ input[type=submit]:hover {
     color: hsl(25, 97%, 53%);
     border-radius: 20px;
     line-height: 24px;
+    margin: 1.5em;
 }
 
 .attribution {
@@ -134,6 +142,15 @@ input[type=submit]:hover {
 }
 
 @media only screen and (min-width: 376px) {
+    .ty-module {
+        padding: 0.4em;
+    }
+
+    .ty-module img {
+        max-width: 180px;
+        margin-bottom: 0.4em;
+    }
+
     label {
         width: 32px;
         height: 32px;
@@ -142,4 +159,5 @@ input[type=submit]:hover {
     h1 {
         margin: 1em 0 0.5em 0;
     }
+
 }
