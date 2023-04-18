@@ -47,13 +47,11 @@ body {
     width: 300px;
 }
 
-.header-mobile img:first-of-type {
-    position: fixed;
-}
+.header-mobile img:first-of-type {}
 
 .header-mobile img:last-of-type {
     position: relative;
-    top: -11em;
+    top: -22em;
 }
 
 .container div:last-of-type {
