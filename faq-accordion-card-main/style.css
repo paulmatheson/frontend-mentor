@@ -118,9 +118,15 @@ hr {
 }
 
 @media only screen and (min-width: 376px) {
+    body {
+        font-size: 0.9em;
+    }
+
     .header-desktop {
-        display: flex;
-        flex-direction: column;
+        display: initial;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
     }
 
     .header-mobile {
@@ -130,20 +136,31 @@ hr {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 800px;
-        max-width: 740px;
+        gap: 4em;
+        width: 900px;
+        max-width: 900px;
+        padding: 0;
+        max-height: 34em;
     }
 
-    .container div:last-of-type {
-        padding-right: 6em;
-    }
-
-    .header-desktop img {
-        width: 300px;
+    .header-desktop img:first-of-type {
+        position: relative;
+        left: -33em;
+        top: -18em;
+        width: 60em;
     }
 
     .header-desktop img:last-of-type {
         position: relative;
-        top: -12em;
+        top: -56em;
+        left: -6em;
+    }
+
+    .container div:last-of-type {
+        width: 23em;
+    }
+
+    h1 {
+        text-align: left;
     }
 }
