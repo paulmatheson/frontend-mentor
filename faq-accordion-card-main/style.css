@@ -20,7 +20,7 @@ body {
     align-items: center;
     padding-top: 14em;
     font-family: 'Kumbh Sans', Arial, Helvetica, sans-serif;
-    color: hsl(237, 12%, 33%);
+    color: hsl(240, 6%, 50%);
     transition: all 0.3s ease-in-out;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     height: 100vh;
@@ -59,7 +59,7 @@ body {
     top: -22em;
 }
 
-.container div:last-of-type {
+.faq {
     width: 100%;
 }
 
@@ -84,13 +84,23 @@ li {
     align-items: center;
     width: 100%;
     cursor: pointer;
-    color: hsl(238, 29%, 16%);
+    color: hsl(240, 6%, 50%);
+    font-weight: 300;
+}
 
+li:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.icon.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
 }
 
 ul p {
     color: hsl(240, 6%, 50%);
     font-weight: 300;
+    transition: all 0.3s ease-in-out;
 }
 
 hr {
@@ -101,15 +111,18 @@ hr {
 
 .hidden {
     display: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .show {
     display: initial;
+    transition: all 0.3s ease-in-out;
 }
 
 .icon {
     height: 8px;
     width: 12px;
+    transition: all 0.3s ease-in-out;
 }
 
 .bold {
@@ -120,12 +133,15 @@ hr {
     transform: rotate(-180);
 }
 
+.active {
+    color: hsl(238, 29%, 16%)
+}
+
 @media only screen and (min-width: 376px) {
     .header-desktop {
-        display: initial;
-        position: relative;
-        overflow: hidden;
-        height: 100%;
+        display: grid;
+        grid-template-rows: 60px 60px auto;
+        width: 450px;
     }
 
     .header-mobile {
@@ -136,28 +152,35 @@ hr {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 4em;
-        width: 700px;
-        max-width: 700px;
+        width: 900px;
+        max-width: 900px;
+        min-width: 900px;
         padding: 0;
-        max-height: 34em;
+        clip-path: inset(0 0 0 0 round 25px);
     }
 
     .header-desktop img:first-of-type {
-        position: relative;
-        left: -33em;
-        top: -17.5em;
-        width: 57em;
+        position: absolute;
+        left: -37em;
+        top: -15em;
     }
 
-    .header-desktop img:last-of-type {
-        position: relative;
-        top: -54em;
-        left: -6em;
-        width: 30em;
+    .header-desktop img:nth-child(2) {
+        position: absolute;
+        top: 16em;
+        left: 4em;
     }
 
-    .container div:last-of-type {
-        width: 23em;
+    .box-image {
+        position: absolute;
+        z-index: 1;
+        top: 28em;
+        left: 3.2em;
+    }
+
+    .faq {
+        width: 25em;
+        padding: 4em 0;
     }
 
     h1 {
