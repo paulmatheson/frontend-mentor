@@ -164,15 +164,15 @@ hr {
     }
 
     .header-desktop img:first-of-type {
-        position: absolute;
-        left: -37em;
-        top: -15em;
+        position: relative;
+        left: -47em;
+        top: -37em;
     }
 
     .header-desktop img:nth-child(2) {
-        position: absolute;
-        top: 16em;
-        left: 4em;
+        position: relative;
+        top: -12em;
+        left: -6em;
     }
 
     .box-image {
