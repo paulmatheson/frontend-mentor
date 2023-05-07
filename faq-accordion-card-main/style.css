@@ -142,10 +142,17 @@ hr {
 }
 
 @media only screen and (min-width: 376px) {
+    .box-image {
+        display: initial;
+        position: relative !important;
+        top: 28em !important;
+        left: -38.5em !important;
+    }
+
     .header-desktop {
         display: grid;
         grid-template-rows: 60px 60px auto;
-        width: 450px;
+        width: 400px;
     }
 
     .header-mobile {
@@ -156,23 +163,25 @@ hr {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 4em;
-        width: 900px;
-        max-width: 900px;
-        min-width: 900px;
+        width: 850px;
+        max-width: 850px;
+        min-width: 850px;
         padding: 0;
         clip-path: inset(0 0 0 0 round 25px);
     }
 
     .header-desktop img:first-of-type {
         position: relative;
-        left: -47em;
-        top: -37em;
+        left: -42em;
+        top: -34em;
+        width: 70em;
     }
 
     .header-desktop img:nth-child(2) {
         position: relative;
-        top: -12em;
+        top: -13em;
         left: -6em;
+        width: 34em;
     }
 
     .box-image {
