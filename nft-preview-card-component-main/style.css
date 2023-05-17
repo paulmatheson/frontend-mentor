@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    color: hsl(0, 0%, 100%, .5);
+    font-weight: 300;
+    padding: 1.8em;
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.6rem;
+
+}
+
+p {
+    line-height: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.creator {
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin: 1.2em 0 0 0;
+    padding: 1.2em 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.creator img {
+    width: 50px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
+
+.header-image {
+    background: url(images/image-equilibrium.jpg);
+    background-position: 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 370px;
+    border-radius: 10px;
+    margin: 0 0 1em 0;
+}
+
+.price-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.attribution {
+    margin: 2em 0;
+    color: hsl(0, 0%, 100%, .5);
+}
+
+.attribution a {
+    color: white;
+}
+
+.price,
+.time {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
