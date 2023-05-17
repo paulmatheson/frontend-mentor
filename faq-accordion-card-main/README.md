@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Link](https://your-solution-url.com)
-- Live Site URL: [Link](https://your-live-site-url.com)
+- Solution URL: [Link](https://github.com/paulmatheson/frontend-mentor/tree/main/faq-accordion-card-main)
+- Live Site URL: [Link](https://amazing-rugelach-710d57.netlify.app/)
 
 ## My process
 
