@@ -21,6 +21,7 @@ body {
     width: 350px;
     display: flex;
     flex-direction: column;
+    margin: 2em 0 0 0;
 }
 
 h1 {
@@ -58,7 +59,7 @@ a {
     background-position: 0%;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 370px;
+    height: 350px;
     border-radius: 10px;
     margin: 0 0 1em 0;
 }
@@ -75,6 +76,7 @@ a {
 
 .attribution a {
     color: white;
+
 }
 
 .price,
@@ -82,4 +84,9 @@ a {
     display: flex;
     align-items: center;
     gap: 0.6em;
+    font-weight: 500;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
 }
