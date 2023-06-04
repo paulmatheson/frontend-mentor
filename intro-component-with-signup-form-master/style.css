@@ -2,7 +2,9 @@
 
 body {
     font-size: 16px;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background: url(images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
 }
 
 main,
@@ -13,8 +15,7 @@ footer {
 }
 
 main {
-    background: url(images/bg-intro-mobile.png);
-    background-color: hsl(0, 100%, 74%);
+    max-width: 350px;
     padding: 4em 1.4em;
 }
 
@@ -22,7 +23,8 @@ main div:nth-child(2) {
     background-color: hsl(248, 32%, 49%);
     color: white;
     border-radius: 10px;
-    padding: 0.6em 0
+    padding: 0.6em 0;
+    margin-bottom: 1.6em;
 }
 
 main div:last-of-type {
@@ -47,6 +49,16 @@ input {
 input[type="text"],
 input[type="password"] {
     padding: 1em;
+    border-radius: 5px;
+    border: 2px solid #e3e3e3;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 24px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: 2px solid hsla(249, 47%, 34%, 0.65);
 }
 
 button {
@@ -72,4 +84,14 @@ button {
     width: 70%;
     margin: 0 auto;
     margin-bottom: 2em;
+}
+
+.disclaimer a {
+    font-weight: 600;
+    text-decoration: none;
+    color: hsl(0, 100%, 74%)
+}
+
+.shadow {
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.2);
 }
