@@ -19,7 +19,7 @@ main {
     padding: 4em 1.4em 2em 1.4em;
 }
 
-main div:nth-child(2) {
+.form-area div:nth-child(1) {
     background-color: hsl(248, 32%, 49%);
     color: white;
     border-radius: 10px;
@@ -27,13 +27,13 @@ main div:nth-child(2) {
     margin: 4em 0 1.6em;
 }
 
-main div:nth-child(2) p {
+.form-area div:nth-child(1) p {
     max-width: 12em;
     margin: 0 auto;
     padding: 0.8em;
 }
 
-main div:last-of-type {
+.form-area div:last-of-type {
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -67,6 +67,12 @@ input[type="password"]:focus {
     outline: 2px solid hsla(249, 47%, 34%, 0.65);
 }
 
+input:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 3px solid hsl(0, 100%, 74%);
+}
+
 button {
     width: 100%;
     padding: 1.5em;
@@ -78,6 +84,10 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(154, 59%, 60%);
 }
 
 .introduction {
@@ -102,6 +112,10 @@ button {
     box-shadow: 0px 8px rgba(0, 0, 0, 0.2);
 }
 
+.btn-shadow {
+    box-shadow: 0px 4px hsl(154, 59%, 45%);
+}
+
 .attribution {
     font-size: 14px;
     margin-bottom: 2em;
@@ -110,4 +124,28 @@ button {
 
 .attribution a {
     text-decoration: none;
+}
+
+@media (min-width: 600px) {
+
+    main {
+        max-width: 850px;
+        width: 800px;
+        padding: 4em 1.4em 2em 1.4em;
+        display: flex;
+
+    }
+
+
+    .form-area div:nth-child(2) {
+        color: white;
+        border-radius: 10px;
+        padding: 1.4em 1.4em;
+    }
+
+    .disclaimer {
+        width: 90%;
+        font-size: 0.7em;
+    }
+
 }
