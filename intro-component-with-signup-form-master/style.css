@@ -44,8 +44,8 @@ main {
 form {
     padding: 1em 1em;
     display: flex;
+    gap: 2em;
     flex-direction: column;
-    gap: 0em;
 }
 
 input {
@@ -129,18 +129,41 @@ button:hover {
 @media (min-width: 600px) {
 
     main {
-        max-width: 850px;
-        width: 800px;
+        max-width: 950px;
+        width: 950px;
         padding: 4em 1.4em 2em 1.4em;
-        display: flex;
-
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
     }
 
+    main div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding: 2em;
+    }
+
+    .form-area div:nth-child(1) {
+        background-color: hsl(248, 32%, 49%);
+        color: white;
+        border-radius: 10px;
+        padding: 0.6em 0;
+        margin: 4em 0 1.6em;
+    }
 
     .form-area div:nth-child(2) {
         color: white;
         border-radius: 10px;
         padding: 1.4em 1.4em;
+    }
+
+    .form-area div:nth-child(1) p {
+        margin: 0 auto;
+        padding: 0.8em;
+        max-width: 100%;
     }
 
     .disclaimer {
