@@ -110,7 +110,7 @@ ul p {
 hr {
     border: none;
     border-top: 1px solid hsl(240, 5%, 91%);
-    margin: 1.4em 0;
+
 }
 
 .hidden {
@@ -141,7 +141,31 @@ hr {
     color: hsl(238, 29%, 16%)
 }
 
-@media only screen and (min-width: 376px) {
+details>summary {
+    list-style-type: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 1em;
+    background: url(/images/icon-arrow-down.svg) right no-repeat;
+}
+
+details[open]>summary {
+    list-style-type: none;
+    font-weight: 700;
+    color: hsl(238, 29%, 16%)
+}
+
+details>summary:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+details {
+    color: hsl(240, 6%, 50%);
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 635px) {
     body {
         padding: 0;
     }
