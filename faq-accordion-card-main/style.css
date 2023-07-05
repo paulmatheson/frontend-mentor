@@ -21,7 +21,7 @@ body {
     padding-top: 14em;
     font-family: 'Kumbh Sans', Arial, Helvetica, sans-serif;
     color: hsl(240, 6%, 50%);
-    transition: all 0.3s ease-in-out;
+
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     height: 100vh;
 }
@@ -73,72 +73,17 @@ h1 {
     margin-bottom: 1.4em;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-li {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    cursor: pointer;
-    color: hsl(240, 6%, 50%);
-    font-weight: 300;
-}
-
-li:hover {
-    color: hsl(14, 88%, 65%);
-}
-
-.icon.rotate {
-    transform: rotate(180deg);
-    transition: transform 0.3s ease-in-out;
-}
-
-ul p {
-    color: hsl(240, 6%, 50%);
-    font-weight: 300;
-    transition: all 0.3s ease-in-out;
-}
-
-hr {
-    border: none;
-    border-top: 1px solid hsl(240, 5%, 91%);
-
-}
-
-.hidden {
-    display: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.show {
-    display: initial;
-    transition: all 0.3s ease-in-out;
-}
-
 .icon {
     height: 8px;
     width: 12px;
     transition: all 0.3s ease-in-out;
 }
 
-.bold {
-    font-weight: 700;
-}
-
-.rotate {
-    transform: rotate(-180);
-}
-
-.active {
-    color: hsl(238, 29%, 16%)
+details {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    color: hsl(240, 6%, 50%);
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
 }
 
 details>summary {
@@ -146,23 +91,21 @@ details>summary {
     outline: none;
     cursor: pointer;
     margin-bottom: 1em;
-    background: url(/images/icon-arrow-down.svg) right no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
 }
+
 
 details[open]>summary {
     list-style-type: none;
     font-weight: 700;
-    color: hsl(238, 29%, 16%)
+    color: hsl(238, 29%, 16%);
 }
 
 details>summary:hover {
     color: hsl(14, 88%, 65%);
-}
-
-details {
-    color: hsl(240, 6%, 50%);
-    font-weight: 300;
-    transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 635px) {
