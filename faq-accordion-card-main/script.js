@@ -1,20 +1,17 @@
-let accItem = document.querySelectorAll("li")
+let details = document.querySelectorAll("details")
 
-accItem.forEach((item) => {
-    item.addEventListener("click", () => {
-        const isOpen = item.classList.contains("active");
-        const accItems = document.querySelectorAll("li");
-        accItems.forEach((item) => {
-            item.nextElementSibling.classList.add("hidden");
-            item.classList.remove("bold");
-            item.classList.remove("active");
-            item.querySelector(".icon").classList.remove("rotate");
-        });
-        if (!isOpen) {
-            item.nextElementSibling.classList.remove("hidden");
-            item.classList.add("bold");
-            item.classList.add("active");
-            item.querySelector(".icon").classList.add("rotate");
+details.forEach((targetDetail) => {
+    targetDetail.addEventListener("toggle", (event) => {
+
+        if (targetDetail.open == true) {
+            targetDetail.querySelector(".icon").style.transform = 'rotate(-180deg)';
+            details.forEach(innerDetail => {
+                if (innerDetail != targetDetail) {
+                    innerDetail.open = false
+                }
+            })
+        } else {
+            targetDetail.querySelector(".icon").style.transform = 'rotate(-360deg)'
         }
     });
-});
+})
