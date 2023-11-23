@@ -8,6 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
   <title>Frontend Mentor | Intro component with sign up form</title>
 
 </head>
@@ -27,13 +28,14 @@
         </p>
       </div>
       <div class="shadow">
-        <form>
-          <input type="text" id="fname" name="fname" placeholder="First Name" required>
-          <input type="text" id="lname" name="lname" placeholder="Last Name" required>
-          <input type="text" id="eml" name="email" placeholder="Email Address">
-          <input type="password" id="pass" name="password" placeholder="Password">
+        <form id="form" onsubmit="clickError(event)">
+          <input type="text" id="fname" name="fname" placeholder="First Name" required onchange="validate(this.id)"
+            title="test">
+          <input type="text" id="lname" name="lname" placeholder="Last Name" required onchange="validate(this.id)">
+          <input type="email" id="eml" name="email" placeholder="Email Address" required onchange="validate(this.id)">
+          <input type="password" id="pass" name="password" placeholder="Password" required onchange="validate(this.id)">
 
-          <button class="btn-shadow">Claim your free trial</button>
+          <button onclick="clickError(event)" type="submit" class="btn-shadow">Claim your free trial</button>
         </form>
         <p class="disclaimer">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </div>
