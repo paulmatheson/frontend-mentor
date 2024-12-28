@@ -19,20 +19,45 @@ body {
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--primary-color);
     line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    padding: 0;
+}
+
+.hero-image {
+    background: url(/assets/images/illustration-sign-up-mobile.svg) no-repeat center;
+    background-size: cover;
+    height: 18em;
+    border-radius: 0 0 1em 1em;
+    padding: 0;
+    margin: 0;
 }
 
 .content {
-    padding: 1em;
-    width: 100%;
+    padding: 1em 1.5em;
 }
 
 h1 {
     font-size: 2.2em;
 }
 
-li {
-    margin: 8px 0;
+ul {
+    padding: 0 0em;
+    list-style-type: none;
 }
+
+li {
+    padding: none;
+    margin: 1em 0;
+    display: flex;
+    align-items: start;
+    gap: 1em;
+}
+
 
 label {
     display: block;
@@ -41,6 +66,24 @@ label {
 }
 
 input {
-    padding: 1em;
+    padding: 1.25em;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
     width: 100%;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin: 1.5em 0;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9;
 }
