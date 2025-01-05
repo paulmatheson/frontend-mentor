@@ -37,8 +37,9 @@ main {
     margin: 0;
 }
 
-.content {
+.main-content {
     padding: 1em 1.5em;
+    z-index: -1;
 }
 
 h1 {
@@ -86,4 +87,10 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: #2980b9;
+}
+
+.section-success {
+    padding: 0 2em;
+    display: none;
+    z-index: 1;
 }
