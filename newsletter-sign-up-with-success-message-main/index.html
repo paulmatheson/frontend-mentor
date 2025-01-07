@@ -15,46 +15,49 @@
 <body>
   <!-- Sign-up form start -->
   <main>
-    <section class="hero-image"></section>
-    <section class="main-content">
-      <h1>Stay updated!</h1>
+    <section id="main-content">
+      <div class="hero-image"></div>
+      <div class="main-content">
+        <h1>Stay updated!</h1>
 
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-      <ul>
-        <li><img src="assets/images/icon-list.svg" />Product discovery and building what matters</li>
-        <li><img src="assets/images/icon-list.svg" />Measuring to ensure updates are a success</li>
-        <li><img src="assets/images/icon-list.svg" />And much more!</li>
-      </ul>
-      <form>
-        <label for="email">Email address</label>
-        <input name="email" type="text" id="email" placeholder="email@company.com">
+        <ul>
+          <li><img src="assets/images/icon-list.svg" />Product discovery and building what matters</li>
+          <li><img src="assets/images/icon-list.svg" />Measuring to ensure updates are a success</li>
+          <li><img src="assets/images/icon-list.svg" />And much more!</li>
+        </ul>
+        <form id="form">
+          <label for="email">Email address</label>
+          <input name="email" type="email" id="email" placeholder="email@company.com" required>
 
-        <input type="submit" value="Subscribe to monthly newsletter">
-      </form>
+          <input type="submit" value="Subscribe to monthly newsletter">
+        </form>
+      </div>
     </section>
 
     <!-- Sign-up form end -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/paulmatheson" target="_blank">Paul Matheson</a>.
+    </div>
 
   </main>
 
   <!-- Success message start -->
-  <section class="section-success">
+  <section class="section-success" id="section-success">
     <img src="/assets/images/icon-success.svg" />
     <h1>Thanks for subscribing!</h1>
 
     <p>A confirmation email has been sent to
       <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.
     </p>
-    <button>Dismiss message</button>
+    <button id="btn-dismiss">Dismiss message</button>
   </section>
 
   <!-- Success message end -->
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

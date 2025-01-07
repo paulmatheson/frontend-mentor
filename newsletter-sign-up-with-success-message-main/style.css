@@ -69,10 +69,14 @@ label {
 input {
     padding: 1.25em;
     display: block;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 1px solid #d3d3d3;
     box-sizing: border-box;
     width: 100%;
+}
+
+input[type="text"]:focus {
+    border: 1px solid black;
 }
 
 form input[type="submit"] {
@@ -83,14 +87,21 @@ form input[type="submit"] {
     border: none;
     cursor: pointer;
     margin: 1.5em 0;
+    transition: 0.2s ease-in-out all;
 }
 
 form input[type="submit"]:hover {
-    background-color: #2980b9;
+    background: rgb(255, 62, 131);
+    background: linear-gradient(90deg, rgba(255, 62, 131, 1) 0%, rgba(247, 114, 79, 1) 79%);
+    box-shadow: 0px 15px 30px rgba(255, 97, 62, 0.3);
 }
 
 .section-success {
     padding: 0 2em;
     display: none;
     z-index: 1;
+}
+
+.attribution {
+    margin: 0 0 2em 0;
 }
