@@ -21,6 +21,7 @@ body {
     line-height: 1.5em;
     padding: 0;
     margin: 0;
+    background-color: hsl(235, 18%, 26%);
 }
 
 main {
@@ -109,6 +110,7 @@ form input[type="submit"]:hover {
     z-index: 1;
     padding: 8em 2em;
     height: 75vh;
+    background-color: white;
 }
 
 .section-success img {
@@ -134,4 +136,33 @@ form input[type="submit"]:hover {
 
 .attribution {
     margin: 0 0 2em 0;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .section-success {
+        padding: 3.4em;
+        display: flex;
+        width: 24em;
+        height: auto;
+        border-radius: 35px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    button {
+        margin: 1.6em 0 0 0;
+    }
+
+    form input[type="submit"] {
+        margin: 2em;
+    }
 }
