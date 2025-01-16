@@ -1,7 +1,7 @@
 let form = document.getElementById('form')
 let btnDismiss = document.getElementById('btn-dismiss')
 
-let mainContent = document.getElementById('main-content')
+let mainContent = document.getElementById('section-default')
 let success = document.getElementById('section-success')
 
 form.addEventListener('submit', e => {
