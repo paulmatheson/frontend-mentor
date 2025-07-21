@@ -32,7 +32,6 @@ main {
 
 .main-content {
     color: var(--primary-color) padding: 1em 1.5em;
-    z-index: -1;
 }
 
 #section-default {
@@ -150,14 +149,18 @@ form input[type="submit"]:hover {
     #section-default {
         display: flex;
         flex-direction: row-reverse;
+        border-radius: 25px;
+        padding: 15px;
+        max-width: 775px;
     }
 
     .hero-image {
-        width: 400px;
+        min-width: 300px;
+        border-radius: 15px;
     }
 
     .main-content {
-        width: 400px;
+        padding: 2.4em;
     }
 
     .section-success {
@@ -172,11 +175,8 @@ form input[type="submit"]:hover {
         font-size: 3em;
     }
 
-    button {
-        margin: 1.6em 0 0 0;
+    form input[type="submit"] {
+        margin: 2em 0 0 0;
     }
 
-    form input[type="submit"] {
-        margin: 2em;
-    }
 }
